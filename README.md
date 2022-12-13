@@ -1,7 +1,6 @@
-# 구현하기
+# To-do-app
 
 
 
 
-![To-do-app 구현영상](https://user-images.githubusercontent.com/111476477/207279534-1b533605-c578-44fc-991e-fd0b8fbb4562.gif)
-
+![To-Do-app 구현](https://user-images.githubusercontent.com/111476477/207285300-cedd881e-da79-442e-a024-a0fe02862129.gif)

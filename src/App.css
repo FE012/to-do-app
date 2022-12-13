@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
+/* Home Page Container */
+.header {
+  border-bottom: 1.5px solid #fceabb;
+}
+.header__img {
+  width: 50px;
+}
+.header__span {
+  font-family: monospace;
+  font-size: 2em;
+  color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homepage__container {
+  width: 100%;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 0 auto;
+}
+
+/* ToDo App Input Box */
+.todoapp__inputbox {
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.todoapp__inputbox-inp {
+  border: none;
+  padding: 10px;
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.todoapp__inputbox-inp:focus {
+  outline: none;
+}
+
+.todoapp__inputbox-add-btn {
+  border: none;
+  border-radius: 0;
+  margin: 1px;
+  background-color: #fceabb;
+  color: #d3883e;
+  height: 40px;
+  width: 40px;
+  font-weight: bold;
+}
+
+/* ToDo Item List */
+
+.todoapp__list {
+  margin-top: 30px;
+}
+.todoapp__list-tit {
+  font-weight: bold;
+  margin: 0;
+}
+
+.todoapp__list-ul {
+  /* ul의 불릿 없애줌 */
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+}
+
+/* ToDo Item */
+
+.todoapp__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 40px;
+}
+.todoapp__item:last-child {
+  margin-bottom: 0;
+}
+
+.todoapp__item-checkbox {
+  margin-right: 10px;
+}
+.todoapp__item-ctx {
+  flex: 1;
+}
+
+.todoapp__item-edit-btn,
+.todoapp__item-delete-btn {
+  border: none;
+  border-radius: 0;
+  height: 30px;
+  width: 30px;
+  background-color: inherit;
+}
+
+.todoapp__item-edit-btn:hover,
+.todoapp__item-delete-btn:hover {
+  cursor: pointer;
+  background-color: #fceabb;
 }
